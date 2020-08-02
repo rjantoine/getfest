@@ -1,0 +1,100 @@
+/* 
+  -----------------------------------
+  PopMenu Magic Style Sheet
+  by Project Seven Development
+  www.projectseven.com
+  Menu Type: Horizontal
+  Style Theme:0 -Basic Style
+  -----------------------------------
+*/
+#p7PMnav {
+	margin: 0;
+	padding:0;
+}
+#p7PMnav li {
+	list-style-type: none;
+	margin: 0;
+	padding: 0;
+	background-image: url(../images/navbreak.gif);
+	background-repeat: no-repeat;
+	background-position: right center;
+}
+#p7PMnav ul {
+	margin: 0;
+	padding: 0;
+	background-color: #ffc223;
+	position: absolute;
+	left: -9000px;
+	z-index: 10000;
+}
+#p7PMnav a {
+	display: block;
+	text-decoration: none;
+	color: #5e4328;
+	line-height:1;
+	padding-top: 3px;
+	padding-right: 13px;
+	padding-bottom: 4px;
+	padding-left: 10px;
+	font-weight: bold;
+	font-size: 120%;
+}
+#p7PMnav a:hover, #p7PMnav a:active, #p7PMnav a:focus {
+	background-color: #ffc223;
+	color: #FFFFFF;
+	background-image: url(../images/navbreak.gif);
+	background-repeat: no-repeat;
+	background-position: right center;
+}
+
+/* ------ the current page marker style ------ */
+#p7PMnav .p7PMmark {
+	color: #FFFFFF;
+	font-weight: bold;
+}
+/* ------ the trigger link styles ------- */
+
+/*the trigger link */
+#p7PMnav ul .p7PMtrg, #p7PMnav ul .p7PMon {
+	background-image:  url(img/p7PM_dark_east.gif);
+	background-repeat:	no-repeat;
+	background-position: right center;
+}
+/* the active trigger link style */
+#p7PMnav .p7PMon {
+	background-color: #0066FF;
+	color: #FFFFFF;
+}
+/*the submenu classes */
+
+#p7PMnav .p7PMhide {
+	left: -9000px;
+}
+#p7PMnav .p7PMshow {
+	left: auto;
+	z-index: 20000 !important;
+}
+/* Top level menu width */
+#p7PMnav li {
+	float: left;
+	width: autopx;
+}
+#p7PMnav ul li {
+	float: none;
+}
+#p7PMnav ul, #p7PMnav ul li {
+	width: 100px;
+}
+#pmmcrumb {
+	font-weight: bold;
+	margin-bottom: 16px;
+	color: #333333;
+}
+#pmmcrumb a, #pmmcrumb a:visited {
+	font-weight: normal;
+	color: #535FAC;
+}
+#pmmcrumb a:hover, #pmmcrumb a:active, #pmmcrumb a:focus {
+	font-weight: normal;
+	color: #333333;
+}
